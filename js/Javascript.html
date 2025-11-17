@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>JavaScript — Documentación</title>
+  <link rel="stylesheet" href="Css Files.css/Style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <a href="../index.html"><img src="Images/Cat.png" alt="logo"></a>
+      <nav><a href="../index.html">Inicio</a></nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <article>
+      <h1>JavaScript — Programación en el navegador</h1>
+      <p>JavaScript permite manipular el DOM, manejar eventos y realizar lógica en el cliente.</p>
+
+      <section>
+        <h2>Ejemplo: Interacción simple</h2>
+        <button id="btn-saludo">Haz click</button>
+        <p id="saludo"></p>
+
+        <script>
+          document.getElementById('btn-saludo').addEventListener('click', function() {
+            document.getElementById('saludo').textContent = 'Hola — este texto fue agregado por JavaScript.';
+          });
+        </script>
+      </section>
+
+      <section>
+        <h2>Soporte visual</h2>
+        <img src="../images/javascript.png" alt="Icono JS" style="max-width:250px;">
+      </section>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <a href="../index.html">← Volver a inicio</a>
+    </div>
+  </footer>
+</body>
+</html>
